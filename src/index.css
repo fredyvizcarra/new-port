@@ -18,15 +18,15 @@ body {
   user-select: none;
 }
 
-canvas {
-  touch-action: none;
-}
-
 .screen-max-width {
   margin-inline-start: auto;
   margin-inline-end: auto;
   position: relative;
   max-width: 1120px;
+}
+
+#root[style] {
+  touch-action: auto !important;
 }
 
 @layer utilities {
