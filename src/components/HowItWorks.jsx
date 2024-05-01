@@ -27,7 +27,7 @@ const HowItWorks = () => {
   }, []);
 
   return (
-    <section id="skills" className="common-padding mt-2">
+    <section id="skills" className="common-padding mt-4 sm:mt-0">
       <div className="screen-max-width">
         <div id="chip" className="flex-center w-full my-6">
           <img src={chipImg} alt="chip" width={180} height={180} />
@@ -36,7 +36,7 @@ const HowItWorks = () => {
           <h2 className="hiw-title">Skills.</h2>
 
           <p className="hiw-subtitle">
-            It's here. The biggest redesign in the history of Apple GPUs.
+            Journeying Through My Development Skill Set
           </p>
         </div>
         <Tech />

@@ -95,7 +95,7 @@ body {
   }
 
   .hiw-subtitle {
-    @apply text-gray font-semibold text-xl md:text-2xl py-10 text-center;
+    @apply text-gray font-semibold text-xl md:text-2xl py-5 text-center;
   }
 
   .hiw-video {
