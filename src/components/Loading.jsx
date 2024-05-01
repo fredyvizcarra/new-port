@@ -1,13 +1,11 @@
+import { logoImg } from "../utils";
+
 const Loading = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center h-screen gap-10">
         <div>
-          <img
-            src="/public/assets/images/fv-white.png"
-            alt="fredy logo"
-            className="w-16"
-          />
+          <img src={logoImg} alt="fredy logo" className="w-16" />
         </div>
 
         <div class="flex space-x-2 justify-center items-center bg-white  dark:invert">
