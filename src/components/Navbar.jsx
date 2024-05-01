@@ -45,13 +45,19 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-baseline gap-7 max-sm:justify-end max-sm:flex-1">
-          <img
-            src={linkedinImg}
-            alt="linkedin"
-            width={20}
-            height={20}
-            className="cursor-pointer hidden sm:flex"
-          />
+          <a
+            href="https://www.linkedin.com/in/fredy-vizcarra-9b0616247/"
+            target="_blank"
+            className="transform transition-all duration-200 hover:scale-105"
+          >
+            <img
+              src={linkedinImg}
+              alt="linkedin"
+              width={20}
+              height={20}
+              className="cursor-pointer hidden sm:flex"
+            />
+          </a>
           <div className="sm:hidden">
             <img
               src={toggle ? closeImg : menuImg}
@@ -63,7 +69,7 @@ const Navbar = () => {
             <div
               className={`${
                 !toggle ? "hidden" : "flex"
-              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+              } p-6 bg-black absolute opacity-[0.8] top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
             >
               <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
                 {navLists.map((nav) => (
