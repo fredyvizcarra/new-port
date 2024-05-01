@@ -28,7 +28,7 @@ export const navLists = [
     title: "About",
   },
   {
-    id: "proyect",
+    id: "project",
     title: "Proyects",
   },
   {

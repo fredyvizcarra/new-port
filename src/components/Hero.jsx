@@ -2,6 +2,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { heroVideo, smallHeroVideo } from "../utils";
 import { useState, useEffect } from "react";
+import { pdfFile } from "../utils";
 
 const Hero = () => {
   const [videoSrc, setVideoSrc] = useState(
@@ -14,6 +15,10 @@ const Hero = () => {
     } else {
       setVideoSrc(heroVideo);
     }
+  };
+
+  const handleOpenPDF = () => {
+    window.open(pdfFile, "_blank");
   };
 
   useEffect(() => {
@@ -30,7 +35,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="about" className="w-full nav-height bg-black">
+    <section className="w-full nav-height bg-black">
       <div className="h-full w-full flex-center flex-col">
         <video
           className="pointer-events-none w-full h-full object-cover "
@@ -46,9 +51,9 @@ const Hero = () => {
         id="cta"
         className="flex flex-col items-center opacity-0 translate-y-0"
       >
-        <a href="#highlights" className="btn">
+        <button id="#highlights" className="btn" onClick={handleOpenPDF}>
           Download CV
-        </a>
+        </button>
         <p className="font-normal text-xl text-center">
           I'm a web developer focused on creating dynamic and responsive web
           solutions that provide a superior user experience.

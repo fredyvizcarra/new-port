@@ -4,7 +4,7 @@ import { emailImg } from "../utils";
 
 const Footer = () => {
   return (
-    <footer className="py-5 sm:px-10 px-5">
+    <footer id="contact" className="py-5 sm:px-10 px-5">
       <div className="screen-max-width">
         <p className="font-semibold text-gray text-xl">Contact</p>
 

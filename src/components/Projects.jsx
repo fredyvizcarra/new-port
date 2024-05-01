@@ -63,7 +63,10 @@ const ProjectCard = ({
 
 const Projects = () => {
   return (
-    <section className="common-padding h-auto w-full flex justify-center items-center bg-zinc py-6">
+    <section
+      id="project"
+      className="common-padding h-auto w-full flex justify-center items-center bg-zinc py-6"
+    >
       <div className="max-w-7xl ">
         <div>
           <p className="sm:text-[18px] text-[14px] uppercase tracking-wider">

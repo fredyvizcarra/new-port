@@ -24,7 +24,7 @@ const Model = () => {
     });
   }, []);
   return (
-    <section className="common-padding h-screen">
+    <section id="about" className="common-padding h-screen">
       <div className="screen-max-width flex-col md:flex-row">
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:1/3 h-[55vh] md:h-[90vh] overflow-hidden relative">
