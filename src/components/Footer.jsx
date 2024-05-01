@@ -1,5 +1,6 @@
 import React from "react";
 import { footerLinks } from "../constants";
+import { emailImg } from "../utils";
 
 const Footer = () => {
   return (
@@ -16,9 +17,9 @@ const Footer = () => {
               href="mailto:fredyvizcarrag@gmail.com"
             >
               <img
-                src="/public/assets/images/email.png"
+                src={emailImg}
                 alt="logo email"
-                className="hidden dark:block w-6 lg:w-7 mr-3"
+                className="w-6 lg:w-7 mr-3"
               />
               fredyvizcarrag@gmail.com
             </a>
@@ -35,7 +36,7 @@ const Footer = () => {
                 <img
                   src={link.icon}
                   alt={link.name}
-                  className="hidden dark:block lg:w-8 w-6 mr-3 lg:mr-4"
+                  className="lg:w-8 w-6 mr-3 lg:mr-4"
                 />
               </a>
             ))}

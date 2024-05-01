@@ -5,11 +5,13 @@ import logo from "/assets/images/fv-white.png";
 import menu from "/assets/images/menu.svg";
 import close from "/assets/images/close.svg";
 import chip from "/assets/images/chip.png";
+import email from "/assets/images/email.png";
 
 export const heroVideo = hmv;
 export const smallHeroVideo = smallmv;
 export const closeImg = close;
 export const logoImg = logo;
 export const menuImg = menu;
+export const emailImg = email;
 export const chipImg = chip;
 export const linkedinImg = linkedin;
