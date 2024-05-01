@@ -30,27 +30,17 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="w-full nav-height bg-black">
-      <div className="h-5/6 w-full flex-center flex-col">
-        {/* <p id="hero" className="hero-title">
-          Portpolio 2024
-        </p> */}
-        {/* <img
-          src="/public/assets/images/prof.png"
-          alt="fredy picture"
-          className="w-64 lg:w-72 animate-float"
-        /> */}
-        <div className="w-full">
-          <video
-            className="pointer-events-none w-full h-full object-cover "
-            autoPlay
-            muted
-            playsInline={true}
-            key={videoSrc}
-          >
-            <source src={videoSrc} type="video/mp4" />
-          </video>
-        </div>
+    <section id="about" className="w-full nav-height bg-black">
+      <div className="h-full w-full flex-center flex-col">
+        <video
+          className="pointer-events-none w-full h-full object-cover "
+          autoPlay
+          muted
+          playsInline={true}
+          key={videoSrc}
+        >
+          <source src={videoSrc} type="video/mp4" />
+        </video>
       </div>
       <div
         id="cta"

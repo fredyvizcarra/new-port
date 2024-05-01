@@ -1,11 +1,11 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { animateWithGsap } from "../utils/animation";
 import { chipImg } from "../utils";
+import Tech from "./Tech";
 
 const HowItWorks = () => {
-  const videoRef = useRef();
   useGSAP(() => {
     gsap.from("#chip", {
       scrollTrigger: {
@@ -39,6 +39,7 @@ const HowItWorks = () => {
             It's here. The biggest redesign in the history of Apple GPUs.
           </p>
         </div>
+        <Tech />
       </div>
     </section>
   );

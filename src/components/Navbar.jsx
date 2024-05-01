@@ -1,11 +1,11 @@
-import { logoImg, linkedinImg } from "../utils";
+import { logoImg, menuImg, closeImg, linkedinImg } from "../utils";
 import { navLists } from "../constants";
-import React, { useEffect, useState } from "react";
-//import { Link } from "react-router-dom";
+import React, { useEffect, useState, useRef } from "react";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [scrolled, setScrolled] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,8 +50,39 @@ const Navbar = () => {
             alt="linkedin"
             width={20}
             height={20}
-            className="cursor-pointer"
+            className="cursor-pointer hidden sm:flex"
           />
+          <div className="sm:hidden">
+            <img
+              src={toggle ? closeImg : menuImg}
+              alt="menu"
+              className="w-[28px] h-[28px] object-contain"
+              onClick={() => setToggle(!toggle)}
+            />
+
+            <div
+              className={`${
+                !toggle ? "hidden" : "flex"
+              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            >
+              <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
+                {navLists.map((nav) => (
+                  <li
+                    key={nav.id}
+                    className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                      active === nav.title ? "text-white" : "text-secondary"
+                    }`}
+                    onClick={() => {
+                      setToggle(!toggle);
+                      setActive(nav.title);
+                    }}
+                  >
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
     </header>

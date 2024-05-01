@@ -11,6 +11,16 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import nextjs from "./tech/nextjs.png";
 import threejs from "./tech/threejs.svg";
+import github from "./github.png";
+import bitmon from "./bitmon.png";
+import quickjobs from "./quickjobs.png";
+import upick from "./upick.jpeg";
+import upickjam from "./upickjam.png";
+import ascent from "./ascent.png";
+import olyvia from "./olyvia.png";
+import twitter from "./contact/twitter.svg";
+import instagram from "./contact/instagram.svg";
+import linkedin from "./contact/linkedin.svg";
 
 export {
   css,
@@ -26,4 +36,14 @@ export {
   tailwind,
   typescript,
   threejs,
+  github,
+  bitmon,
+  quickjobs,
+  upick,
+  ascent,
+  olyvia,
+  upickjam,
+  linkedin,
+  instagram,
+  twitter,
 };

@@ -24,10 +24,7 @@ const Model = () => {
     });
   }, []);
   return (
-    <section className="common-padding">
-      <h1 id="heading" className="section-heading">
-        Overview.
-      </h1>
+    <section className="common-padding h-screen">
       <div className="screen-max-width flex-col md:flex-row">
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:1/3 h-[55vh] md:h-[90vh] overflow-hidden relative">
@@ -53,8 +50,11 @@ const Model = () => {
             </Canvas>
           </div>
           <div className="feature-text-container md:w-2/3">
-            <div className="flex-1 flex-center ">
-              <p className="feature-text g_text">
+            <div className="flex gap-0 flex-col md:gap-6">
+              <h1 id="heading" className="section-heading">
+                Overview.
+              </h1>
+              <p className="feature-text g_text md:text-lg/loose ">
                 I am a web developer with over a year of experience in{" "}
                 <span className="text-white">
                   JavaScript, React, Next.js and TailwindCss

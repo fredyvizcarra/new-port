@@ -5,7 +5,10 @@ import { technologies } from "../constants";
 
 const Tech = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-10">
+    <div
+      className="flex flex-row flex-wrap justify-center gap-10 px-2 md:px-24 my-4 md:my-10"
+      id="skills"
+    >
       {technologies.map((technology) => (
         <div
           className="w-28 h-28 flex flex-col justify-center gap-2"
