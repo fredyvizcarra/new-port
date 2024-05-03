@@ -15,6 +15,7 @@ import github from "./github.png";
 import bitmon from "./bitmon.png";
 import quickjobs from "./quickjobs.png";
 import upick from "./upick.jpeg";
+import upickInt from "./upick-int.jpeg";
 import upickjam from "./upickjam.png";
 import ascent from "./ascent.png";
 import olyvia from "./olyvia.png";
@@ -46,4 +47,5 @@ export {
   linkedin,
   instagram,
   twitter,
+  upickInt,
 };

@@ -15,6 +15,7 @@ import {
   ascent,
   upick,
   upickjam,
+  upickInt,
   quickjobs,
   instagram,
   linkedin,
@@ -172,7 +173,7 @@ export const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: upick,
+    image: upickInt,
     source_code_link: "https://github.com/",
   },
   {
