@@ -1,17 +1,27 @@
 import React from "react";
 
-import BallCanvas from "./canvas/Ball";
 import { technologies } from "../constants";
+import { Tilt } from "react-tilt";
 
 const Tech = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-10 px-2 md:px-24 my-4 md:my-10">
+    <div className="flex flex-row flex-wrap justify-center gap-12 px-2 md:px-24 my-4 md:my-10  ">
       {technologies.map((technology) => (
         <div
-          className="w-28 h-28 flex flex-col justify-center gap-2"
+          className="w-16 md:w-20 h-16 md:h-20 flex flex-col justify-center gap-2"
           key={technology.name}
         >
-          <BallCanvas icon={technology.icon} />
+          <Tilt
+            options={{
+              max: 30,
+              scale: 1,
+              speed: 450,
+            }}
+          >
+            <div className="">
+              <img src={technology.icon} alt={technology.name} />
+            </div>
+          </Tilt>
           <span className="text-center text-sm">{technology.name}</span>
         </div>
       ))}

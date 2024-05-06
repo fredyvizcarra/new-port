@@ -91,7 +91,7 @@ body {
   }
 
   .hiw-title {
-    @apply text-4xl md:text-7xl font-semibold text-center;
+    @apply text-3xl md:text-5xl font-semibold text-center;
   }
 
   .hiw-subtitle {
