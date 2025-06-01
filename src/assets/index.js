@@ -22,6 +22,8 @@ import olyvia from "./olyvia.png";
 import twitter from "./contact/twitter.svg";
 import instagram from "./contact/instagram.svg";
 import linkedin from "./contact/linkedin.svg";
+import rulas from "./tech/raul.png";
+import leo from "./tech/leoo.png";
 
 export {
   css,
@@ -48,4 +50,6 @@ export {
   instagram,
   twitter,
   upickInt,
+  leo,
+  rulas,
 };
